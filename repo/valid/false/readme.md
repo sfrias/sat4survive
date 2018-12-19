@@ -1,0 +1,1 @@
+Valid images for boats.
