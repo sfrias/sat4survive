@@ -9,6 +9,7 @@ To approach this fit, we're thinking about subpixel resolution propietary techno
 
 Hard work was to make training and test dataset from official sources (this info becomes public and can be downloaded)
 
+![Calculate filters for first, second, third and fourth convolution](https://github.com/sfrias/sat4survive/blob/master/doc_media/Boats00.png)
 
 Salvar Vidas en el Mar con Tratamiento Datos Satélite
 
