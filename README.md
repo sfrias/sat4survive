@@ -6,10 +6,10 @@ We're using sat public parametric data for radiance to identify possible small b
 The goal is to democratize this info vs. private plattforms or not public data as FRONTEX, and other commercial.
 
 To approach this fit, we're thinking about subpixel resolution propietary technologies and equivalent convolution network.
-
-Hard work was to make training and test dataset from official sources (this info becomes public and can be downloaded)
-
 ![Calculate filters for first, second, third and fourth convolution](https://github.com/sfrias/sat4survive/blob/master/doc_media/Boats00.png)
+Calculating filters for first, second, third and fourth convolution...Hard work was to make training and test dataset from official sources (this info becomes public and can be downloaded)
+
+
 
 Salvar Vidas en el Mar con Tratamiento Datos Satélite
 
