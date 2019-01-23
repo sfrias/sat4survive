@@ -5,9 +5,11 @@ We're using sat public parametric data for radiance to identify possible small b
 
 The goal is to democratize this info vs. private plattforms or not public data as FRONTEX, and other commercial.
 
+![Frontex vs Sentinel-2 Comparison](https://github.com/sfrias/sat4survive/blob/master/doc_media/boat_detection.png)
+
 To approach this fit, we're thinking about subpixel resolution propietary technologies and equivalent convolution network.
 First problem is that resolution was 10 meters for pixel. Calculating final value for selected passed positions can variate on filter reached of 410 levels(6-7 humans) on 4x4 filter, around mean value of first filter (32x32), with values 0-255 for pixel. Can be possible.
-![Calculate filters for first, second, third and fourth convolution](https://github.com/sfrias/sat4survive/blob/master/doc_media/Boats00.png)
+
 Calculating filters for first, second, third and fourth convolution...Hard work was to make training and test dataset from official sources (this info becomes public and can be downloaded)
 
 
