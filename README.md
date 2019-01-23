@@ -20,6 +20,66 @@ ANTECEDENTES:
 http://www.publico.es/sociedad/migrantes-y-refugiados-muertos-mediterraneo-superan-3-000-cuarto-ano-consecutivo.html
 Los migrantes y refugiados muertos en el Mediterráneo superan los 3.000 por cuarto año consecutivo.
 
+OBJECTIVE:
+The objective is to statistically locate small boats full of people sailing in a certain quadrant of the sea.
+
+TECHNICAL ASSUMPTIONS:
+For this, the first thing to do is make an appropriate choice of the data to be used (dataset quality).
+
+ The goal, in this case, is to achieve the greatest success by maximizing certain positives or minimizing false negatives (criterion according to the valuation of the lives of people / resources invested in salvage), in a model that manages to differentiate that added direct radiation from small boats, when they are grouped or depart from an area at the time of sampling, with respect to areas of the sea where there is no such subtle anomaly in the radiation captured by some pixels.
+ 
+The average infrared radiation of a human being at 37ºC is about 100W.
+
+ Taking into account the pseudo-vertical position, crush, clothing, hair and head cover, a direct / interlaced minimum radiation of 6% is estimated, and scattered (inter-radiant or reflected in certain materials) of just another 4%, and that mix with possible reflections and coincident emissions dependent on the Sun (our main problem in false positives).
+ 
+It could be received from a point in orbit said direct radiation, with a pessimistic average loss, dependent on climatic conditions ranging between 100% (water vapor clouds, typical absorption CO2, oxygen and other gases greenhouse effect) and 80% .
+
+ This represents very small emission powers in a very small space:
+
+- for tiny boats of 6-7 people in an area of ​​3x1 meters is a maximum of 130W in broad daylight. The estimated normalized value for a pixel of 10x10 meters is 3.9W and for a pixel of 20x20 meters it is only 1W.
+
+- for small boats of 25-30 people in an area of ​​5x2 meters is a maximum of 540W in broad daylight. The estimated normalized value for a pixel of 10x10 meters is 54W, and for a pixel of 20x20 meters it is 13.5W
+
+- for larger vessels, it is not evaluated as there are already reliable and mature detection methods and systems in place.
+
+ But not all are setbacks, we also have information provided by other models:
+
+The boats, when smaller, tend to sail in a group, perhaps because of a fundamental principle of mutual protection against shipwrecks.
+The data provided by the satellites can be filtered fairly well from radiometric interference, also delimiting the cloud zones (highest proportion of water vapor drops) in each sampling.
+
+
+Another point in favor of possible success of the model:
+It is possible to work more with the infrared zones that show more significant differences before the dispersed increase of infrared radiation, with sensible differences between said bands.
+ By Wien's Law of Law: For a black body, the product of the maximum radiation wavelength and the thermodynamic temperature is constant. As a result, when the temperature rises, the maximum radiant energy changes towards shorter wavelengths (higher energy and frequency) and towards the end of the spectrum.
+When the maximum is evaluated from the Planck radiation formula, it is found that the product of the maximum wavelength and the temperature is constant. The preferred wave length is LambdaMax = 0.002898 / Temperature Kelvin.
+In the mid-infrared, between 5um to 25um-40um, we have most of the thermal emission of the bodies at typical temperatures on the Earth's surface (several hundred Kelvin).
+
+It has been proposed to use the facilities that can be provided by the Copernicus platform of the ESA, from the Sentinel Satellites fleet, which at least give us these samplings and resolutions by pantographic capture.
+
+
+PRACTICAL EVALUATION OF THE ASSUMPTIONS:
+We are going to carry out an exploratory analysis of a known area, where there are ships, with different resolutions resolutions of space per pixel and see the implications that it entails, before assembling the game of images for training and the game of test images, taking advantage of we have much more resolution images of the chosen places.
+
+
+
+We have chosen the port of Tarragona for its activity with large and medium-sized boats, which is mixed with fishing fleets, and with small nautical recreation boats.
+
+
+
+The first thing we are going to do is check if the length estimate per pixel is adjusted for a medium infrared channel, which will be the most used in detections.
+
+
+
+
+The final breakwater of the port is measured having already the photo adjusted with the mask and the corresponding metadata. We see that it corresponds with the geographic information we have.
+
+
+
+
+
+We are now going to estimate the dimensions of a ship that is perfectly visualized by the pixels and the shadow it projects in front of the sun. To the naked eye you can not see
+
+# SPANISH
 
 OBJETIVO:
 El objetivo es localizar estadísticamente  pequeñas embarcaciones llenas de personas que navegan en un cuadrante determinado del mar. 
